@@ -9,7 +9,8 @@ const cards = [
         id: 1,
         title:'Fatz web',
         image: image1,
-        url: 'https://faztweb.com'
+        url: 'https://faztweb.com',
+        /* text: 'Holaaa soy daniel' */
     },
     {
         id: 2,
@@ -33,7 +34,7 @@ function Cards() {
                 {
                     cards.map(card =>(
                         <div className="col-md-4" key={card.id}>
-                            <Card title={card.title} imageSource={card.image} url={card.url}/>
+                            <Card title={card.title} imageSource={card.image} url={card.url} text={card.text}/>
                          </div>
                     ))
                 }
